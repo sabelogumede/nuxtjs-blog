@@ -3,37 +3,16 @@
     <section class="intro">
       <h1>Busy Living Green News!</h1>
     </section>
-    <section class="featured-posts">
-      <PostPreview 
-        id="1"
-        thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
-        title="Hello there!"
-        previewText="This is my first post" />
-      <PostPreview 
-        id="2"
-        thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
-        title="Hello there!"
-        previewText="This is my first post" />
-      <PostPreview 
-        id="3"
-        thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
-        title="Hello there!"
-        previewText="This is my first post" />
-      <PostPreview 
-        id="4"
-        thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
-        title="Hello there!"
-        previewText="This is my first post" />
-    </section>
+    <PostList />
   </div>
 </template>
 
 <script>
-import PostPreview from '@/components/Posts/PostPreview'
+import PostList from '@/components/Posts/PostList'
 
 export default {
     components: {
-        PostPreview
+        PostList
     }
 }
 </script>
