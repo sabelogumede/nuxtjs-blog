@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <section class="intro">
-      <h1>Busy Green Living News!</h1>
+      <h1>Busy Living Green News!</h1>
     </section>
     <section class="featured-posts">
       <PostPreview 
@@ -24,7 +24,6 @@
         thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
         title="Hello there!"
         previewText="This is my first post" />
-      
     </section>
   </div>
 </template>
@@ -50,6 +49,7 @@ export default {
   background-position: center; 
   background-size: cover; 
 }
+
 .intro h1 {
   position: absolute;
   top: 10%;
