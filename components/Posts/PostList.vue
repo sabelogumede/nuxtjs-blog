@@ -2,21 +2,25 @@
     <section class="post-list">
             <PostPreview 
                 id="1"
+                :is-admin="isAdmin"
                 thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
                 title="Hello there!"
                 previewText="This is my first post" />
             <PostPreview 
                 id="2"
+                :is-admin="isAdmin"
                 thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
                 title="Hello there!"
                 previewText="This is my first post" />
             <PostPreview 
                 id="3"
+                :is-admin="isAdmin"
                 thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
                 title="Hello there!"
                 previewText="This is my first post" />
             <PostPreview 
                 id="4"
+                :is-admin="isAdmin"
                 thumbnail= "http://www.organicexpo.co.nz/wp-content/uploads/2011/12/glm-march-2017-small.jpg"
                 title="Hello there!"
                 previewText="This is my first post" />
@@ -29,6 +33,12 @@ import PostPreview from '@/components/Posts/PostPreview'
 export default {
     components: {
         PostPreview
+    },
+    props: {
+        isAdmin: {
+            type: Boolean,
+            default: false
+        }
     }
 }
 </script>
